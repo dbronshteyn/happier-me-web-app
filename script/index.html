@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>A Happier Me</title>
+</head>
+<body>
+    <div class="landing-page" id="landingPage">
+        <h1>A Happier Me</h1>
+        <button onclick="showSignUp()">Sign Up</button>
+        <button onclick="showSignIn()">Sign In</button>
+    </div>
+
+    <div class="auth-page" id="signUpPage">
+        <h2>Sign Up</h2>
+        <form onsubmit="createAccount(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
+
+    <div class="auth-page" id="signInPage">
+        <h2>Sign In</h2>
+        <form onsubmit="signIn(event)">
+            <label for="signInEmail">Email:</label>
+            <input type="email" id="signInEmail" required>
+            
+            <label for="signInPassword">Password:</label>
+            <input type="password" id="signInPassword" required>
+            
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <div class="welcome-page" id="welcomePage" style="display: none;">
+        <h2>Welcome to A Happier Me!</h2>
+        <p id="userEmail"></p>
+        <p>Please choose a domain:</p>
+        <div class="domain-boxes">
+            <div class="domain-box" onclick="selectDomain('Values')">Values</div>
+            <div class="domain-box" onclick="selectDomain('Purpose')">Purpose</div>
+            <div class="domain-box" onclick="selectDomain('Emotional Regulations')">Emotional Regulations</div>
+            <div class="domain-box" onclick="selectDomain('Happiness')">Happiness</div>
+            <div class="domain-box" onclick="selectDomain('Empathy')">Empathy</div>
+            <div class="domain-box" onclick="selectDomain('Self-esteem')">Self-esteem</div>
+            <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
+            <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
