@@ -35,9 +35,34 @@ function showWelcomePage(email) {
 }
 
 function selectDomain(domain) {
-    alert("Selected Domain: " + domain);
-
-    /**
-     * We can do something in the future here, but I just needed a method for clicking each domain 
-     */
+    console.log("Selected Domain: " + domain);
+    switch (domain) {
+        case 'Values':
+            window.location.href = "values.html";
+            break;
+        case 'Purpose':
+            window.location.href = "purpose.html";
+            break;
+        case 'Emotional Regulations':
+            window.location.href = "emotional-regulations.html";
+            break;
+        case 'Happiness':
+            window.location.href = "happiness.html";
+            break;
+        case 'Empathy':
+            window.location.href = "empathy.html";
+            break;
+        case 'Self-esteem':
+            window.location.href = "self-esteem.html";
+            break;
+        case 'Beliefs':
+            window.location.href = "beliefs.html";
+            break;
+        case 'Relationship':
+            window.location.href = "relationship.html";
+            break;
+        default:
+            alert("Invalid domain selection");
+            break;
+    }
 }
