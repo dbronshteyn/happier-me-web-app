@@ -8,9 +8,26 @@
 </head>
 <body>
     <div class="landing-page" id="landingPage">
-        <h1>A Happier Me</h1>
-        <button onclick="showSignUp()">Sign Up</button>
-        <button onclick="showSignIn()">Sign In</button>
+        <div class="ellipse-center">
+            <!-- <h1>A Happier Me</h1> -->
+            <!-- <p style="font-size: 30px; font-family: Avenir Next;">A HAPPIER</p>
+            <p style="font-size: 30px; font-family: Avenir Next;">ME</p> -->
+            <div class="a-happier">
+                <!-- <h2 style="line-height: 10px;">A HAPPIER <pre><h1 style="font-size: 70px; font-family: Avenir Next;"> ME</h1></pre></h2> -->
+                <p>A HAPPIER</p>
+            </div>
+            <div class="me">
+                <p>ME</p>
+            </div>
+            <!-- <button onclick="showSignUp()">Sign Up</button>
+            <button onclick="showSignIn()">Sign In</button> -->
+            <div class="box-of-buttons">
+                <button class="sign-up-button" onclick="togglePages()">Sign Up</button>
+                <button class="sign-in-button" onclick="showSignIn()">Sign In</button>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="auth-page" id="signUpPage">
@@ -23,6 +40,8 @@
             <input type="password" id="password" required>
             
             <button type="submit">Create Account</button>
+            <!-- <button type="submit" onclick="document.getElementById('signUpPage').style.display='none'">Cancel</button> -->
+            <button onclick="togglePages()">Cancel</button>
         </form>
     </div>
 

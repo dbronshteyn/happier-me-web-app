@@ -2,6 +2,21 @@ function showSignUp() {
     document.getElementById("landingPage").style.display = "none";
     document.getElementById("signUpPage").style.display = "flex";
 }
+function togglePages() {
+    var landingPage = document.getElementById("landingPage");
+    var signUpPage = document.getElementById("signUpPage");
+
+    if (landingPage.style.display === "none") {
+        landingPage.style.display = "flex"; 
+        signUpPage.style.display = "none";
+    } else {
+        landingPage.style.display = "none";
+        signUpPage.style.display = "flex";
+    }
+
+}
+
+
 
 function showSignIn() {
     document.getElementById("landingPage").style.display = "none";
