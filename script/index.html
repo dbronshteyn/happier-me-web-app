@@ -16,12 +16,18 @@
     <div class="auth-page" id="signUpPage">
         <h2>Sign Up</h2>
         <form onsubmit="createAccount(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        
             <label for="email">Email:</label>
             <input type="email" id="email" required>
-            
+        
             <label for="password">Password:</label>
             <input type="password" id="password" required>
-            
+        
             <button type="submit">Create Account</button>
         </form>
     </div>
@@ -41,6 +47,8 @@
 
     <div class="welcome-page" id="welcomePage" style="display: none;">
         <h2>Welcome to A Happier Me!</h2>
+        <!-- Add an info button here in the top left -->
+        <button onclick="showInfo()">Info</button>
         <p id="userEmail"></p>
         <p>Please choose a domain:</p>
         <div class="domain-boxes">
@@ -53,6 +61,8 @@
             <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
             <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
         </div>
+
+        
     </div>
 
     <script src="script.js"></script>

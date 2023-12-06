@@ -66,3 +66,31 @@ function selectDomain(domain) {
             break;
     }
 }
+
+function getFirstName() {
+    return document.getElementById('firstName').value;
+}
+
+
+function createAccount(event) {
+    event.preventDefault(); 
+
+    var firstName = getFirstName();
+    // var email = document.getElementById('email').value;
+
+    document.getElementById('userEmail').innerText = 'Hi, ' + firstName + '!';
+    document.getElementById('landingPage').style.display = 'none';
+    document.getElementById('signUpPage').style.display = 'none';
+    document.getElementById('signInPage').style.display = 'none';
+    document.getElementById('welcomePage').style.display = 'block';
+}
+
+function goBackToWelcomePage() {
+    document.getElementById('domainPage').style.display = 'none';
+    document.getElementById('welcomeMessage').style.display = 'block';
+}
+
+function showInfo() {
+
+}
+
