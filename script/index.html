@@ -22,7 +22,7 @@
             <!-- <button onclick="showSignUp()">Sign Up</button>
             <button onclick="showSignIn()">Sign In</button> -->
             <div class="box-of-buttons">
-                <button class="sign-up-button" onclick="togglePages()">Sign Up</button>
+                <button class="sign-up-button" onclick="togglePagesSignUp()">Sign Up</button>
                 <button class="sign-in-button" onclick="showSignIn()">Sign In</button>
             </div>
         </div>
@@ -31,22 +31,22 @@
     </div>
 
     <div class="auth-page" id="signUpPage">
-        <h2>Sign Up</h2>
-        <form onsubmit="createAccount(event)">
+        <h2 class="sign-up-text">Sign Up</h2>
+        <form class="signup-form" onsubmit="createAccount(event)">
             <label for="email">Email:</label>
-            <input type="email" id="email" required>
+            <input type="email" id="signUpEmail" required>
             
             <label for="password">Password:</label>
-            <input type="password" id="password" required>
+            <input type="password" id="signUpPassword" required>
             
-            <button type="submit">Create Account</button>
+            <button type="submit" class="create-account-button">Create Account</button>
             <!-- <button type="submit" onclick="document.getElementById('signUpPage').style.display='none'">Cancel</button> -->
-            <button onclick="togglePages()">Cancel</button>
+            <button class="cancel-button" onclick="togglePagesSignUp()">Cancel</button>
         </form>
     </div>
 
     <div class="auth-page" id="signInPage">
-        <h2>Sign In</h2>
+        <h2 class="sign-in-text">Sign In</h2>
         <form onsubmit="signIn(event)">
             <label for="signInEmail">Email:</label>
             <input type="email" id="signInEmail" required>
@@ -54,7 +54,8 @@
             <label for="signInPassword">Password:</label>
             <input type="password" id="signInPassword" required>
             
-            <button type="submit">Sign In</button>
+            <button class="sign-in-submit-button" type="submit">Sign In</button>
+            <button class="cancel-button" onclick="togglePagesSignIn()">Cancel</button>
         </form>
     </div>
 
@@ -65,10 +66,10 @@
         <div class="domain-boxes">
             <div class="domain-box" onclick="selectDomain('Values')">Values</div>
             <div class="domain-box" onclick="selectDomain('Purpose')">Purpose</div>
-            <div class="domain-box" onclick="selectDomain('Emotional Regulations')">Emotional Regulations</div>
+            <div class="domain-box" onclick="selectDomain('EmotionalRegulations')">Emotional Regulations</div>
             <div class="domain-box" onclick="selectDomain('Happiness')">Happiness</div>
             <div class="domain-box" onclick="selectDomain('Empathy')">Empathy</div>
-            <div class="domain-box" onclick="selectDomain('Self-esteem')">Self-esteem</div>
+            <div class="domain-box" onclick="selectDomain('Selfesteem')">Self-esteem</div>
             <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
             <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
         </div>

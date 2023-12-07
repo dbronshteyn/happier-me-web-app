@@ -26,14 +26,25 @@ body {
     box-shadow: 0px 4px 4px #00000040;
 }
 
-.auth-page, .welcome-page {
+.auth-page{
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    /* background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    width: 413px;
+    height: 413px;
+    background-color: #e19f9e;
+    border-radius: 206.44px;
+    box-shadow: 0px 4px 4px #00000040;
+}
+
+.welcome-page{
+    display: none;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -42,6 +53,12 @@ h2 {
 
 form {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
 }
 
 /* button {
@@ -56,6 +73,34 @@ form {
     /* height:
     width: 40dvw;
 } */
+/* .signup-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+} */
+
+#signUpEmail, #signUpPassword{
+    width: 20rem;
+    height: 2rem;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#signInEmail, #signInPassword{
+    width: 20rem;
+    height: 2rem;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
 
 .a-happier{
     display: flex; 
@@ -84,6 +129,16 @@ form {
     color: #fff;
 }
 
+.sign-up-text{
+    font-size: 40px;
+    color: #fff;
+}
+
+.sign-in-text{
+    font-size: 40px;
+    color: #fff;
+}
+
 .box-of-buttons{
     display: flex;
     flex-direction: column;
@@ -92,7 +147,7 @@ form {
     position: relative;
 }
 
-.sign-up-button{
+.sign-up-button {
     background-color: #fceed5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #e19f9e;
@@ -124,10 +179,59 @@ form {
     font-size: 25px;
 }
 
+.create-account-button{
+    background-color: #fceed5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #e19f9e;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.cancel-button{
+    background-color: #fceed5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #e19f9e;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* height: */
+    width: 8rem;
+    font-size: 20px;
+}
+
+.sign-in-submit-button{
+    background-color: #fceed5;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #e19f9e;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
 
 button:hover {
-    background-color: #e19f9e;
+    background-color: #f4e9c4;
 }
+
 
 .domain-boxes {
     display: flex;
@@ -151,6 +255,9 @@ button:hover {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+    /* white-space: normal;
+    overflow-x: auto; 
+    word-wrap:break-word; */
 }
 
 .domain-box:hover {
