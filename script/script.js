@@ -1,20 +1,40 @@
+/**
+ * This file contains all the javascript functions for the website
+ */
+
+/**
+ * This function is called when the user clicks on the sign up button
+ */
 function showSignUp() {
     document.getElementById("landingPage").style.display = "none";
     document.getElementById("signUpPage").style.display = "flex";
 }
 
+/**
+ * This function is called when the user clicks on the sign in button
+ */
 function showSignIn() {
     document.getElementById("landingPage").style.display = "none";
     document.getElementById("signInPage").style.display = "flex";
 }
 
-function createAccount(event) {
-    event.preventDefault();
-    var email = document.getElementById("email").value;
+/**
+ * This function creates an account for the user and takes the user to the welcome page
+ * 
+ * This function is removed for now with the more advanced function below
+ * @param {*} event 
+ */
+// function createAccount(event) {
+//     event.preventDefault();
+//     var email = document.getElementById("email").value;
 
-    showWelcomePage(email);
-}
+//     showWelcomePage(email);
+// }
 
+/**
+ * This function signs in the user and takes the user to the welcome page
+ * @param {*} event 
+ */
 function signIn(event) {
     event.preventDefault();
     var email = document.getElementById("signInEmail").value;
@@ -22,6 +42,10 @@ function signIn(event) {
     showWelcomePage(email);
 }
 
+/**
+ * This function is the code for the welcome page
+ * @param {*} email 
+ */
 function showWelcomePage(email) {
     document.getElementById("signUpPage").style.display = "none";
     document.getElementById("signInPage").style.display = "none";
@@ -34,6 +58,10 @@ function showWelcomePage(email) {
     welcomePage.style.display = "flex";
 }
 
+/**
+ * Selects a domain and redirects to the corresponding HTML page.
+ * @param {string} domain - The selected domain.
+ */
 function selectDomain(domain) {
     console.log("Selected Domain: " + domain);
     switch (domain) {
@@ -67,11 +95,19 @@ function selectDomain(domain) {
     }
 }
 
+/**
+ * This function returns the first name of the user
+ * @returns {string} - The first name of the user.
+ */
 function getFirstName() {
     return document.getElementById('firstName').value;
 }
 
 
+/**
+ * This function is called when the user clicks on the sign up button
+ * @param {*} event 
+ */
 function createAccount(event) {
     event.preventDefault(); 
 
@@ -83,14 +119,5 @@ function createAccount(event) {
     document.getElementById('signUpPage').style.display = 'none';
     document.getElementById('signInPage').style.display = 'none';
     document.getElementById('welcomePage').style.display = 'block';
-}
-
-function goBackToWelcomePage() {
-    document.getElementById('domainPage').style.display = 'none';
-    document.getElementById('welcomeMessage').style.display = 'block';
-}
-
-function showInfo() {
-
 }
 

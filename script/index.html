@@ -7,12 +7,14 @@
     <title>A Happier Me</title>
 </head>
 <body>
+    <!-- Landing Page -->
     <div class="landing-page" id="landingPage">
         <h1>A Happier Me</h1>
         <button onclick="showSignUp()">Sign Up</button>
         <button onclick="showSignIn()">Sign In</button>
     </div>
 
+    <!-- Sign Up Page -->
     <div class="auth-page" id="signUpPage">
         <h2>Sign Up</h2>
         <form onsubmit="createAccount(event)">
@@ -32,6 +34,7 @@
         </form>
     </div>
 
+    <!-- Sign In Page -->
     <div class="auth-page" id="signInPage">
         <h2>Sign In</h2>
         <form onsubmit="signIn(event)">
@@ -45,6 +48,7 @@
         </form>
     </div>
 
+    <!-- Welcome Page -->
     <div class="welcome-page" id="welcomePage" style="display: none;">
         <h2>Welcome to A Happier Me!</h2>
         <!-- Add an info button here in the top left -->
@@ -61,8 +65,6 @@
             <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
             <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
         </div>
-
-        
     </div>
 
     <script src="script.js"></script>
