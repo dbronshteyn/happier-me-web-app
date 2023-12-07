@@ -257,6 +257,7 @@ button:hover {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
+    text-align: center
     /* white-space: normal;
     overflow-x: auto; 
     word-wrap:break-word; */
