@@ -7,46 +7,36 @@
     <title>A Happier Me</title>
 </head>
 <body>
+    <!-- Landing Page -->
     <div class="landing-page" id="landingPage">
-        <div class="ellipse-center">
-            <!-- <h1>A Happier Me</h1> -->
-            <!-- <p style="font-size: 30px; font-family: Avenir Next;">A HAPPIER</p>
-            <p style="font-size: 30px; font-family: Avenir Next;">ME</p> -->
-            <div class="a-happier">
-                <!-- <h2 style="line-height: 10px;">A HAPPIER <pre><h1 style="font-size: 70px; font-family: Avenir Next;"> ME</h1></pre></h2> -->
-                <p>A HAPPIER</p>
-            </div>
-            <div class="me">
-                <p>ME</p>
-            </div>
-            <!-- <button onclick="showSignUp()">Sign Up</button>
-            <button onclick="showSignIn()">Sign In</button> -->
-            <div class="box-of-buttons">
-                <button class="sign-up-button" onclick="togglePagesSignUp()">Sign Up</button>
-                <button class="sign-in-button" onclick="showSignIn()">Sign In</button>
-            </div>
-        </div>
-
-
+        <h1>A Happier Me</h1>
+        <button onclick="showSignUp()">Sign Up</button>
+        <button onclick="showSignIn()">Sign In</button>
     </div>
 
+    <!-- Sign Up Page -->
     <div class="auth-page" id="signUpPage">
-        <h2 class="sign-up-text">Sign Up</h2>
-        <form class="signup-form" onsubmit="createAccount(event)">
+        <h2>Sign Up</h2>
+        <form onsubmit="createAccount(event)">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+        
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+        
             <label for="email">Email:</label>
-            <input type="email" id="signUpEmail" required>
-            
+            <input type="email" id="email" required>
+        
             <label for="password">Password:</label>
-            <input type="password" id="signUpPassword" required>
-            
-            <button type="submit" class="create-account-button">Create Account</button>
-            <!-- <button type="submit" onclick="document.getElementById('signUpPage').style.display='none'">Cancel</button> -->
-            <button class="cancel-button" onclick="togglePagesSignUp()">Cancel</button>
+            <input type="password" id="password" required>
+        
+            <button type="submit">Create Account</button>
         </form>
     </div>
 
+    <!-- Sign In Page -->
     <div class="auth-page" id="signInPage">
-        <h2 class="sign-in-text">Sign In</h2>
+        <h2>Sign In</h2>
         <form onsubmit="signIn(event)">
             <label for="signInEmail">Email:</label>
             <input type="email" id="signInEmail" required>
@@ -54,22 +44,24 @@
             <label for="signInPassword">Password:</label>
             <input type="password" id="signInPassword" required>
             
-            <button class="sign-in-submit-button" type="submit">Sign In</button>
-            <button class="cancel-button" onclick="togglePagesSignIn()">Cancel</button>
+            <button type="submit">Sign In</button>
         </form>
     </div>
 
+    <!-- Welcome Page -->
     <div class="welcome-page" id="welcomePage" style="display: none;">
         <h2>Welcome to A Happier Me!</h2>
+        <!-- Add an info button here in the top left -->
+        <button onclick="showInfo()">Info</button>
         <p id="userEmail"></p>
         <p>Please choose a domain:</p>
         <div class="domain-boxes">
             <div class="domain-box" onclick="selectDomain('Values')">Values</div>
             <div class="domain-box" onclick="selectDomain('Purpose')">Purpose</div>
-            <div class="domain-box" onclick="selectDomain('EmotionalRegulations')">Emotional Regulations</div>
+            <div class="domain-box" onclick="selectDomain('Emotional Regulations')">Emotional Regulations</div>
             <div class="domain-box" onclick="selectDomain('Happiness')">Happiness</div>
             <div class="domain-box" onclick="selectDomain('Empathy')">Empathy</div>
-            <div class="domain-box" onclick="selectDomain('Selfesteem')">Self-esteem</div>
+            <div class="domain-box" onclick="selectDomain('Self-esteem')">Self-esteem</div>
             <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
             <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
         </div>

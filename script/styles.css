@@ -1,3 +1,4 @@
+/* Styles for the body element */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,233 +7,47 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #fceed5;
+    background-color: #f4f4f4;
 }
 
-/* .landing-page{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.ellipse-center{
-    /* position:; */
-    width: 413px;
-    height: 413px;
-    /* top: 233px; */
-    /* left: 0; */
-    background-color: #e19f9e;
-    border-radius: 206.44px;
-    box-shadow: 0px 4px 4px #00000040;
-}
-
-.auth-page{
+/* Styles for the authentication and welcome pages */
+.auth-page, .welcome-page {
     display: none;
     flex-direction: column;
     align-items: center;
-    /* background-color: #fff;
+    background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    width: 413px;
-    height: 413px;
-    background-color: #e19f9e;
-    border-radius: 206.44px;
-    box-shadow: 0px 4px 4px #00000040;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.welcome-page{
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
+/* Styles for the heading element */
 h2 {
     margin-bottom: 20px;
 }
 
+/* Styles for the form element */
 form {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: #fff;
 }
 
-/* button {
+/* Styles for the button element */
+button {
     background-color: #e19f9e;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 10px;
     border: none;
-    border-radius: 30px;
+    border-radius: 4px;
     cursor: pointer;
     margin-top: 10px;
-    /* height:
-    width: 40dvw;
-} */
-/* .signup-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    color: #fff;
-} */
-
-#signUpEmail, #signUpPassword{
-    width: 20rem;
-    height: 2rem;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    font-size: 20px;
 }
 
-#signInEmail, #signInPassword{
-    width: 20rem;
-    height: 2rem;
-    margin: 10px;
-    border-radius: 10px;
-    border: none;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.a-happier{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;     
-    width: 410px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    font-size: 50px;
-    position: relative;
-    top: 2rem;
-    color: #fff;
-}
-
-
-.me{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    width: 410px;
-    height: 150px;
-    margin: 0;
-    padding: 0;
-    font-size: 90px;
-    color: #fff;
-}
-
-.sign-up-text{
-    font-size: 40px;
-    color: #fff;
-}
-
-.sign-in-text{
-    font-size: 40px;
-    color: #fff;
-}
-
-.box-of-buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.sign-up-button {
-    background-color: #fceed5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #e19f9e;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    
-}
-
-.sign-in-button{
-    background-color: #fceed5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #e19f9e;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    /* height: */
-    width: 12rem;
-    font-size: 25px;
-}
-
-.create-account-button{
-    background-color: #fceed5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #e19f9e;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-.cancel-button{
-    background-color: #fceed5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #e19f9e;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    /* height: */
-    width: 8rem;
-    font-size: 20px;
-}
-
-.sign-in-submit-button{
-    background-color: #fceed5;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: #e19f9e;
-    padding: 10px;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    margin-top: 10px;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-}
-
-
+/* Styles for the button element on hover */
 button:hover {
-    background-color: #f4e9c4;
+    background-color: #e19f9e;
 }
 
-
+/* Styles for the domain boxes container */
 .domain-boxes {
     display: flex;
     flex-wrap: wrap;
@@ -241,6 +56,7 @@ button:hover {
     margin-top: 20px;
 }
 
+/* Styles for the individual domain box */
 .domain-box {
     width: 150px;
     height: 100px;
@@ -255,11 +71,9 @@ button:hover {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    /* white-space: normal;
-    overflow-x: auto; 
-    word-wrap:break-word; */
 }
 
+/* Styles for the individual domain box on hover */
 .domain-box:hover {
     background-color: #c97877;
 }
