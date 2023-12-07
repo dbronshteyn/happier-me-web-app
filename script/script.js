@@ -120,4 +120,3 @@ function createAccount(event) {
     document.getElementById('signInPage').style.display = 'none';
     document.getElementById('welcomePage').style.display = 'block';
 }
-
