@@ -1,9 +1,6 @@
-/**
- * This file contains all the javascript functions for the website
- */
 
 /**
- * This function is called when the user clicks on the sign up button
+ * This function displays the sign up page
  */
 function showSignUp() {
     document.getElementById("landingPage").style.display = "none";
@@ -11,7 +8,25 @@ function showSignUp() {
 }
 
 /**
- * This function is called when the user clicks on the sign in button
+ * This function toggles between the landing page and the sign up page
+ */
+function togglePagesSignUp() {
+    var landingPage = document.getElementById("landingPage");
+    var signUpPage = document.getElementById("signUpPage");
+
+    if (landingPage.style.display === "none") {
+        landingPage.style.display = "flex"; // Use "flex" or other styles as needed
+        signUpPage.style.display = "none";
+    } else {
+        landingPage.style.display = "none";
+        signUpPage.style.display = "flex"; // Use "flex" or other styles as needed
+    }
+
+}
+
+
+/**
+ * This function displays the sign in page
  */
 function showSignIn() {
     document.getElementById("landingPage").style.display = "none";
@@ -19,20 +34,35 @@ function showSignIn() {
 }
 
 /**
- * This function creates an account for the user and takes the user to the welcome page
- * 
- * This function is removed for now with the more advanced function below
- * @param {*} event 
+ * This function toggles between the landing page and the sign in page
  */
-// function createAccount(event) {
-//     event.preventDefault();
-//     var email = document.getElementById("email").value;
+function togglePagesSignIn() {
+    var landingPage = document.getElementById("landingPage");
+    var signInPage = document.getElementById("signInPage");
 
-//     showWelcomePage(email);
-// }
+    if (landingPage.style.display === "none") {
+        landingPage.style.display = "flex"; // Use "flex" or other styles as needed
+        signInPage.style.display = "none";
+    } else {
+        landingPage.style.display = "none";
+        signInPage.style.display = "flex"; // Use "flex" or other styles as needed
+    }
+
+}
 
 /**
- * This function signs in the user and takes the user to the welcome page
+ * This function creates an account
+ * @param {*} event 
+ */
+function createAccount(event) {
+    event.preventDefault();
+    var email = document.getElementById("email").value;
+
+    showWelcomePage(email);
+}
+
+/**
+ * This function signs in to an existing account
  * @param {*} event 
  */
 function signIn(event) {
@@ -43,7 +73,7 @@ function signIn(event) {
 }
 
 /**
- * This function is the code for the welcome page
+ * This function displays the welcome page
  * @param {*} email 
  */
 function showWelcomePage(email) {
@@ -56,67 +86,27 @@ function showWelcomePage(email) {
 
     userEmail.textContent = "User: " + email;
     welcomePage.style.display = "flex";
+
+    
 }
 
 /**
- * Selects a domain and redirects to the corresponding HTML page.
- * @param {string} domain - The selected domain.
+ * This function directs to the specified domain page
+ * @param {string} domain 
  */
 function selectDomain(domain) {
-    console.log("Selected Domain: " + domain);
-    switch (domain) {
-        case 'Values':
-            window.location.href = "values.html";
-            break;
-        case 'Purpose':
-            window.location.href = "purpose.html";
-            break;
-        case 'Emotional Regulations':
-            window.location.href = "emotional-regulations.html";
-            break;
-        case 'Happiness':
-            window.location.href = "happiness.html";
-            break;
-        case 'Empathy':
-            window.location.href = "empathy.html";
-            break;
-        case 'Self-esteem':
-            window.location.href = "self-esteem.html";
-            break;
-        case 'Beliefs':
-            window.location.href = "beliefs.html";
-            break;
-        case 'Relationship':
-            window.location.href = "relationship.html";
-            break;
-        default:
-            alert("Invalid domain selection");
-            break;
-    }
+    // alert("Selected Domain: " + domain);
+
+    /**
+     * We can do something in the future here, but I just needed a method for clicking each domain 
+     */
+    var url = 'value-pages/'+ domain.toLowerCase().replace(/\s+/g, '_') + '.html'; // Creates a URL slug
+    window.location.href = url; // Redirects to the new page
 }
 
 /**
- * This function returns the first name of the user
- * @returns {string} - The first name of the user.
+ * This function directs the user back to the previous page
  */
-function getFirstName() {
-    return document.getElementById('firstName').value;
-}
-
-
-/**
- * This function is called when the user clicks on the sign up button
- * @param {*} event 
- */
-function createAccount(event) {
-    event.preventDefault(); 
-
-    var firstName = getFirstName();
-    // var email = document.getElementById('email').value;
-
-    document.getElementById('userEmail').innerText = 'Hi, ' + firstName + '!';
-    document.getElementById('landingPage').style.display = 'none';
-    document.getElementById('signUpPage').style.display = 'none';
-    document.getElementById('signInPage').style.display = 'none';
-    document.getElementById('welcomePage').style.display = 'block';
+function goBack() {
+    window.history.back();
 }
