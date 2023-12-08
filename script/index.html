@@ -7,7 +7,6 @@
     <title>A Happier Me</title>
 </head>
 <body>
-    <!-- Landing Page -->
     <div class="landing-page" id="landingPage">
         <div class="ellipse-center">
             <!-- <h1>A Happier Me</h1> -->
@@ -30,7 +29,7 @@
 
 
     </div>
-    <!-- Authentication Page for Sign Up -->
+
     <div class="auth-page" id="signUpPage">
         <h2 class="sign-up-text">Sign Up</h2>
         <form class="signup-form" onsubmit="createAccount(event)">
@@ -46,7 +45,6 @@
         </form>
     </div>
 
-    <!-- Authentication Page for Sign In -->
     <div class="auth-page" id="signInPage">
         <h2 class="sign-in-text">Sign In</h2>
         <form onsubmit="signIn(event)">
@@ -61,20 +59,23 @@
         </form>
     </div>
 
-    <!-- Welcome Page -->
     <div class="welcome-page" id="welcomePage" style="display: none;">
-        <h2>Welcome to A Happier Me!</h2>
-        <p id="userEmail"></p>
-        <p>Please choose a domain:</p>
+        <div>
+            <h2>Welcome to A Happier Me!</h2>
+            <p id="userEmail"></p>
+            <p>Please choose a domain:</p>
+        </div>
+
         <div class="domain-boxes">
-            <div class="domain-box" onclick="selectDomain('Values')">Values</div>
-            <div class="domain-box" onclick="selectDomain('Purpose')">Purpose</div>
-            <div class="domain-box" onclick="selectDomain('EmotionalRegulations')">Emotional Regulations</div>
+            <div class="domain-box" onclick="selectDomain('PersonalityTrends')">Personality Trends</div>
+            <div class="domain-box" onclick="selectDomain('Values')">Value</div>
+            <div class="domain-box" onclick="selectDomain('ComfortableBeingMe')">Comfortable Being Me</div>
             <div class="domain-box" onclick="selectDomain('Happiness')">Happiness</div>
-            <div class="domain-box" onclick="selectDomain('Empathy')">Empathy</div>
-            <div class="domain-box" onclick="selectDomain('Selfesteem')">Self-esteem</div>
-            <div class="domain-box" onclick="selectDomain('Beliefs')">Beliefs</div>
-            <div class="domain-box" onclick="selectDomain('Relationship')">Relationship</div>
+            <div class="domain-box" onclick="selectDomain('GoalsDesires')">Goals & Desires</div>
+            <div class="domain-box" onclick="selectDomain('Distance')">Distance</div>
+            <div class="domain-box" onclick="selectDomain('Faith')">Faith</div>
+            <div class="domain-box" onclick="selectDomain('Change')">Change</div>
+            <div class="domain-box" onclick="selectDomain('APledgeToMyself')">A Pledge To Myself</div>
         </div>
     </div>
 
