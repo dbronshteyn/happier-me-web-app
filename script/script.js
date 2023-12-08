@@ -77,4 +77,25 @@ function selectDomain(domain) {
 
 function goBack() {
     window.history.back();
+    // go back to the domain boxes by grabbing the elemnent
 }
+
+function selectMood(mood) {
+    // Clear previously selected mood
+    document.querySelectorAll('.mood').forEach(mood => mood.classList.remove('selected'));
+    
+    // Set selected mood
+    const selectedMood = document.querySelector(`.mood[onclick="selectMood('${mood}')"]`);
+    selectedMood.classList.add('selected');
+    
+    // You can add further actions here, like sending the selected mood to a server
+    console.log(`Mood selected: ${mood}`);
+  }
+
+function selectActivity(activityName) {
+    // console.log(`Activity selected: ${activityName}`);
+    // Implement your logic to handle activity selection
+    var url = '../' + activityName.toLowerCase().replace(/\s+/g, '_') + '.html'; // Creates a URL slug
+    window.location.href = url; // Redirects to the new page
+}
+  

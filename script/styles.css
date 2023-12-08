@@ -42,7 +42,7 @@ body {
 }
 
 .welcome-page{
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -241,6 +241,15 @@ button:hover {
     margin-top: 20px;
 }
 
+.domain-boxes-personality{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
 .domain-box {
     width: 150px;
     height: 100px;
@@ -255,9 +264,7 @@ button:hover {
     font-weight: bold;
     color: #fff;
     cursor: pointer;
-    /* white-space: normal;
-    overflow-x: auto; 
-    word-wrap:break-word; */
+    text-align: center;
 }
 
 .domain-box:hover {
