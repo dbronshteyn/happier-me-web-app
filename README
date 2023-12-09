@@ -1,0 +1,51 @@
+# Happier Me Web App
+
+## Overview
+
+The Mental Health Tracker for Vietnamese Students is an application designed to help students in Vietnam monitor and enhance their mental well-being. The app provides features such as user authentication, domain-based activities, and a check-in system to document emotions.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
+## Features
+
+### 1. Authentication
+
+The app begins with a user-friendly sign-in page, allowing users to either log in to their existing accounts or sign up for a new one. Secure and seamless authentication ensures that each student has a personalized experience.
+
+### 2. Domain-Based Activities
+
+Users can choose from various domains to engage in activities that target specific aspects of their mental health. Currently, the app offers activities in the "Values" domain, with plans to expand into additional domains in the future.
+
+### 3. Check-In System
+
+The "Checkin" page allows students to document their emotions, providing a valuable tool for self-reflection and tracking emotional well-being over time. Users can input and save their feelings, creating a comprehensive record of their mental health journey.
+
+### 4. Stylish Design
+
+The application has been styled using HTML and CSS to ensure a visually appealing and user-friendly interface. The design focuses on providing a positive and calming experience for users.
+
+## Installation
+
+Open the web app in your preferred web browser.
+
+## Usage
+
+1. Sign in or sign up for an account using the provided authentication system.
+2. Navigate to the activity selection screen and choose the "Values" domain.
+3. Engage in activities designed to improve mental well-being in the selected domain.
+4. Visit the "Checkin" page to document and track your emotions over time.
+
+## Contributing
+
+We welcome contributions to enhance the Mental Health Tracker. If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature/new-feature`.
+5. Submit a pull request.
