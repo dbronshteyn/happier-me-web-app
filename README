@@ -31,7 +31,7 @@ The application has been styled using HTML and CSS to ensure a visually appealin
 
 ## Installation
 
-Open the web app in your preferred web browser.
+Open the web app in your preferred web browser by running `index.html` in the `script` folder.
 
 ## Usage
 
@@ -39,6 +39,11 @@ Open the web app in your preferred web browser.
 2. Navigate to the activity selection screen and choose the "Values" domain.
 3. Engage in activities designed to improve mental well-being in the selected domain.
 4. Visit the "Checkin" page to document and track your emotions over time.
+
+## Future Development
+1. Implement user account storage
+2. Add personalization elements for each user
+3. Enhance user experience and implement transitions
 
 ## Contributing
 
